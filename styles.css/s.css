@@ -1,0 +1,280 @@
+/* style.css */
+
+/* Basic resets and typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .logo img {
+    width: 150px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  nav ul li select {
+    padding: 0.3rem;
+    font-size: 1rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    background-color: #FF9800;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #e68a00;
+  }
+  
+  /* Products Section */
+  .products {
+    padding: 3rem 0;
+    background-color: #fff;
+  }
+  
+  .products h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .product-card {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 280px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 5px;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .product-card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .product-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  
+  .price {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* About Us Section */
+  .about {
+    padding: 3rem 0;
+  }
+  
+  .about h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .about p {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .about img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 5px;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 3rem 0;
+    background-color: #fff;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  #contactForm {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  #contactForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #contactForm button {
+    width: 100%;
+  }
+  
+  /* Cart Sidebar */
+  .cart-sidebar {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    padding: 1rem;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .cart-sidebar.open {
+    right: 0;
+  }
+  
+  .cart-sidebar h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .cart-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-sidebar li {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-toggle {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: #FF9800;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .product-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

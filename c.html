@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Khmer Fresh Produce - Authentic Fruits & Vegetables</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for clear, modern typography -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <!-- Replace with your logo image -->
+        <img src="images/logo.png" alt="Khmer Fresh Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- Language Selector -->
+          <li>
+            <select id="languageSelect">
+              <option value="en">English</option>
+              <option value="ja">日本語</option>
+              <option value="fr">Français</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <h1>Fresh Fruits & Vegetables from Khmer Farmers</h1>
+      <p>Experience the authentic taste of Cambodia with produce directly from local farms.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+          <img src="images/mango.jpg" alt="Fresh Mangoes">
+          <h3>Fresh Mangoes</h3>
+          <p>Sweet, juicy, and full of flavor - perfect for any occasion.</p>
+          <div class="price">$4.99 / lb</div>
+          <button class="btn add-to-cart" data-product="Fresh Mangoes">Add to Cart</button>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="product-card">
+          <img src="images/banana.jpg" alt="Organic Bananas">
+          <h3>Organic Bananas</h3>
+          <p>Rich in potassium and perfect for a healthy snack.</p>
+          <div class="price">$1.99 / lb</div>
+          <button class="btn add-to-cart" data-product="Organic Bananas">Add to Cart</button>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="product-card">
+          <img src="images/papaya.jpg" alt="Ripe Papayas">
+          <h3>Ripe Papayas</h3>
+          <p>Enjoy the tropical flavor and nutritious benefits of papayas.</p>
+          <div class="price">$3.49 / lb</div>
+          <button class="btn add-to-cart" data-product="Ripe Papayas">Add to Cart</button>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="product-card">
+          <img src="images/vegetables.jpg" alt="Assorted Vegetables">
+          <h3>Assorted Vegetables</h3>
+          <p>A mix of organic vegetables, harvested fresh daily.</p>
+          <div class="price">$5.99 / lb</div>
+          <button class="btn add-to-cart" data-product="Assorted Vegetables">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        At Khmer Fresh Produce, we are dedicated to supporting local Khmer farmers by providing high quality, organic fruits and vegetables directly from our farms to your table. Our produce is grown with care, ensuring you get the best that nature offers.
+      </p>
+      <!-- Image showing Khmer farmers or farm work -->
+      <img src="images/farmers.jpg" alt="Khmer Farmers at Work">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+        
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Cart Sidebar -->
+  <aside id="cartSidebar" class="cart-sidebar">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <button id="checkoutBtn" class="btn">Checkout</button>
+  </aside>
+  <button id="cartToggle" class="cart-toggle">Cart</button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Khmer Fresh Produce. All rights reserved.</p>
+      <p>
+        Follow us on:
+        <a href="https://facebook.com" target="_blank">Facebook</a>,
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
